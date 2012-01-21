@@ -1,3 +1,5 @@
+let g:molokai_original = 1
+
 runtime colors/molokai.vim
 
 let g:colors_name="molokayo"
