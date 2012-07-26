@@ -19,4 +19,5 @@ hi! Search guifg=#101010 guibg=#ffcc00
 endif
 hi! link VertSplit Operator
 hi! Cursor guibg=#FFAA00
+hi! link Directory SpecialChar 
 
