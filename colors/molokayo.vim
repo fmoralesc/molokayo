@@ -5,6 +5,7 @@ runtime colors/molokai.vim
 let g:colors_name="molokayo"
 
 hi! link NonText Delimiter
+hi! Special guibg=bg guifg=#66d0ef ctermbg=bg ctermfg=81
 hi! Normal guibg=#202020 guifg=#ffffff ctermbg=234 ctermfg=15
 hi! Conceal guifg=#f92672 guibg=bg cterm=bold ctermfg=198 ctermbg=bg
 hi! Search guifg=#000000 guibg=#ffcc00 gui=bold cterm=bold ctermfg=0 ctermbg=220
