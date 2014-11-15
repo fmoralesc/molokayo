@@ -5,8 +5,8 @@ runtime colors/molokai.vim
 let g:colors_name="molokayo"
 
 hi! link NonText Delimiter
-hi! Special guibg=bg guifg=#66d0ef ctermbg=bg ctermfg=81
 hi! Normal guibg=#202020 guifg=#ffffff ctermbg=234 ctermfg=15
+hi! Special guibg=bg guifg=#66d0ef ctermbg=bg ctermfg=81 gui=italic cterm=italic
 hi! Conceal guifg=#f92672 guibg=bg cterm=bold ctermfg=198 ctermbg=bg
 hi! Search guifg=#000000 guibg=#ffcc00 gui=bold cterm=bold ctermfg=0 ctermbg=220
 hi! Identifier guifg=#ffb700 ctermfg=214
@@ -48,3 +48,9 @@ hi! SLType guibg=#151515 guifg=#66d9ae gui=bold cterm=bold ctermbg=233 ctermfg=8
 hi! SLFunction guibg=#151515 guifg=#a6e2e2 ctermbg=233 ctermfg=153
 hi! SLSpellBad guibg=#151515 gui=undercurl guisp=#ff0000 cterm=underline ctermbg=233
 hi! SLVCS guibg=#151515 guifg=#ff5000 gui=italic cterm=italic ctermbg=233 ctermfg=202
+
+" vim-buftabline support
+hi! link BufTabLineFill StatusLine
+hi! link BufTabLineCurrent SLIdentifier
+hi! link BufTabLineActive SLCharacter
+hi! link BufTabLineHidden SLType
