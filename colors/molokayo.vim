@@ -14,6 +14,8 @@ hi! link Directory SpecialChar
 hi! PreProc guibg=bg guifg=#2ee252 ctermbg=bg ctermfg=41
 hi! PreCondit guibg=bg guifg=#2ee252 ctermbg=bg ctermfg=41
 hi! Title guibg=bg guifg=#ef7511 ctermbg=bg ctermfg=208
+"hi! Function guibg=bg guifg=#00E079
+hi! ColorColumn guibg=#1c1c1c ctermbg=14
 
 " Folds:
 hi! FoldColumn guibg=#282828 guifg=#505050 ctermbg=236 ctermfg=244
@@ -30,7 +32,6 @@ set guicursor=
             \r:CursorReplace,
             \v:CursorVisual,
             \c:ver30-blinkon300-CursorInsert
-
 " Split:
 hi! VertSplit guibg=#151515 guifg=#151515 ctermbg=233  ctermfg=233
 " Statuline:
