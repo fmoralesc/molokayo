@@ -6,7 +6,11 @@ Includes support for [vim-buftabline](https://github.com/ap/vim-buftabline).
 
 Includes some syntax groups for coloring the statusline (see the screenshots
 below, and
-[here](https://github.com/fmoralesc/dotfiles/blob/master/.vimrc#L209-L255)).
+[here](https://github.com/fmoralesc/dotfiles/blob/master/.vimrc#L209-L255) for
+the config used in them).
+
+It also includes a matching configuration for `guicursor`, which I use as a
+mode indicator.
 
 ## Installation
 
