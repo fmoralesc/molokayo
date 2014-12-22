@@ -5,7 +5,8 @@ A very tweaked molokai based theme. Has 16bit and 256 colors support.
 Includes support for [vim-buftabline](https://github.com/ap/vim-buftabline).
 
 Includes some syntax groups for coloring the statusline (see the screenshots
-below, and [here](https://github.com/fmoralesc/dotfiles/blob/master/.vimrc#L209-L255).
+below, and
+[here](https://github.com/fmoralesc/dotfiles/blob/master/.vimrc#L209-L255)).
 
 ## Installation
 
