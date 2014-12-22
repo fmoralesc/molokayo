@@ -14,16 +14,17 @@ mode indicator.
 
 ## Installation
 
-molokayo requires the molokai theme to be installed.
+molokayo requires the [molokai](https://github.com/tomasr/molokai/) theme to be 
+installed.
 
 Using [vim-plug](https://github.com/junegunn/vim-plug): 
 
 ~~~ vim 
-PLug 'vim-scripts/molokai'
-PLug 'fmoralesc/molokayo'
+Plug 'tomasr/molokai'
+Plug 'fmoralesc/molokayo'
 ~~~
 
-Vundle, Neobundle et all should be similar.
+Vundle, Neobundle *et al* should be similar.
 
 # Screenshots
 
