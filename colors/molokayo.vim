@@ -11,12 +11,12 @@ if !exists("g:molokayo#focus_variant")
     let g:molokayo#focus_variant = 0
 endif
 
+hi! Normal guibg=#202020 guifg=#ffffff ctermbg=234 ctermfg=15
 if g:molokayo#focus_variant == 1
     hi! NonText guibg=bg guifg=#303030 ctermbg=bg ctermfg=233
 else
     hi! link NonText Delimiter
 endif
-hi! Normal guibg=#202020 guifg=#ffffff ctermbg=234 ctermfg=15
 hi! Special guibg=bg guifg=#66d0ef ctermbg=bg ctermfg=81 gui=italic cterm=italic
 hi! Conceal guifg=#f92672 guibg=bg cterm=bold ctermfg=198 ctermbg=bg
 hi! Search guifg=#000000 guibg=#ffcc00 gui=bold cterm=bold ctermfg=0 ctermbg=220
