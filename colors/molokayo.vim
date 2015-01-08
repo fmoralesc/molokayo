@@ -74,3 +74,11 @@ hi! link BufTabLineFill StatusLine
 hi! link BufTabLineCurrent SLIdentifier
 hi! link BufTabLineActive SLCharacter
 hi! link BufTabLineHidden SLType
+
+" ctrlp support
+hi! link CtrlPMatch Search
+hi! link CtrlPLinePre Operator
+hi! link CtrlPPrtCursor Cursor
+hi! link CtrlPMode1 SLType
+hi! link CtrlPMode2 SLSpecial
+hi! link CtrlPStats SLFunction
