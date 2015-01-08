@@ -7,8 +7,15 @@ let g:colors_name="molokayo"
 if !exists("g:molokayo#high_contrast#comments")
     let g:molokayo#high_contrast#comments = 0
 endif
+if !exists("g:molokayo#focus_variant")
+    let g:molokayo#focus_variant = 0
+endif
 
-hi! link NonText Delimiter
+if g:molokayo#focus_variant == 1
+    hi! NonText guibg=bg guifg=#303030 ctermbg=bg ctermfg=233
+else
+    hi! link NonText Delimiter
+endif
 hi! Normal guibg=#202020 guifg=#ffffff ctermbg=234 ctermfg=15
 hi! Special guibg=bg guifg=#66d0ef ctermbg=bg ctermfg=81 gui=italic cterm=italic
 hi! Conceal guifg=#f92672 guibg=bg cterm=bold ctermfg=198 ctermbg=bg
@@ -18,15 +25,19 @@ hi! link Directory SpecialChar
 hi! PreProc guibg=bg guifg=#2ee252 ctermbg=bg ctermfg=41
 hi! PreCondit guibg=bg guifg=#2ee252 ctermbg=bg ctermfg=41
 hi! Title guibg=bg guifg=#ef7511 ctermbg=bg ctermfg=208
-"hi! Function guibg=bg guifg=#00E079
 hi! ColorColumn guibg=#1c1c1c ctermbg=14
+hi! Error guibg=#990023 guifg=#ffca00 ctermbg=160 ctermfg=214
 
 if g:molokayo#high_contrast#comments == 1
     hi! Comment guibg=bg guifg=#A6A185 ctermbg=bg ctermfg=248
 endif
 
 " Folds:
-hi! FoldColumn guibg=#282828 guifg=#505050 ctermbg=236 ctermfg=244
+if g:molokayo#focus_variant == 1
+    hi! FoldColumn guibg=bg guifg=#303030
+else
+    hi! FoldColumn guibg=#282828 guifg=#505050 ctermbg=236 ctermfg=244
+endif
 hi! Folded guibg=#252525 guifg=#808080 ctermbg=235 ctermfg=244
 
 " Cursor:
