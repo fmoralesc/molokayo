@@ -17,6 +17,7 @@ if g:molokayo#focus_variant == 1
 else
     hi! link NonText Delimiter
 endif
+hi! Ignore guibg=bg guifg=#303030 ctermbg=bg ctermbg=233
 hi! Special guibg=bg guifg=#66d0ef ctermbg=bg ctermfg=81 gui=italic cterm=italic
 hi! Conceal guifg=#f92672 guibg=bg cterm=bold ctermfg=198 ctermbg=bg
 hi! Search guifg=#000000 guibg=#ffcc00 gui=bold cterm=bold ctermfg=0 ctermbg=220
@@ -25,7 +26,7 @@ hi! link Directory SpecialChar
 hi! PreProc guibg=bg guifg=#2ee252 ctermbg=bg ctermfg=41
 hi! PreCondit guibg=bg guifg=#2ee252 ctermbg=bg ctermfg=41
 hi! Title guibg=bg guifg=#ef7511 ctermbg=bg ctermfg=208
-hi! ColorColumn guibg=#1c1c1c ctermbg=14
+hi! ColorColumn guibg=#1e1e1e ctermbg=233
 hi! Error guibg=#990023 guifg=#ffca00 ctermbg=160 ctermfg=214
 
 if g:molokayo#high_contrast#comments == 1
@@ -34,7 +35,7 @@ endif
 
 " Folds:
 if g:molokayo#focus_variant == 1
-    hi! FoldColumn guibg=bg guifg=#303030
+    hi! FoldColumn guibg=bg guifg=#303030 ctermbg=236 ctermfg=238
 else
     hi! FoldColumn guibg=#282828 guifg=#505050 ctermbg=236 ctermfg=244
 endif
