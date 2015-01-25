@@ -28,6 +28,7 @@ hi! PreCondit guibg=bg guifg=#2ee252 ctermbg=bg ctermfg=41
 hi! Title guibg=bg guifg=#ef7511 ctermbg=bg ctermfg=208
 hi! ColorColumn guibg=#1e1e1e ctermbg=233
 hi! Error guibg=#990023 guifg=#ffca00 ctermbg=160 ctermfg=214
+hi! link TabLineFill StatusLine
 
 if g:molokayo#high_contrast#comments == 1
     hi! Comment guibg=bg guifg=#A6A185 ctermbg=bg ctermfg=248
