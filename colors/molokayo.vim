@@ -17,6 +17,7 @@ if g:molokayo#focus_variant == 1
 else
     hi! link NonText Delimiter
 endif
+hi! EndOfBuffer ctermbg=bg ctermfg=bg guibg=bg guifg=bg
 hi! Ignore guibg=bg guifg=#303030 ctermbg=bg ctermbg=233
 hi! Special guibg=bg guifg=#66d0ef ctermbg=bg ctermfg=81 gui=italic cterm=italic
 hi! Conceal guifg=#f92672 guibg=bg cterm=bold ctermfg=198 ctermbg=bg
@@ -28,7 +29,9 @@ hi! PreCondit guibg=bg guifg=#2ee252 ctermbg=bg ctermfg=41
 hi! Title guibg=bg guifg=#ef7511 ctermbg=bg ctermfg=208
 hi! ColorColumn guibg=#1e1e1e ctermbg=233
 hi! Error guibg=#990023 guifg=#ffca00 ctermbg=160 ctermfg=214
-hi! link TabLineFill StatusLine
+hi! TabLineFill guibg=#202020 guifg=#141414 ctermbg=234 ctermfg=233
+hi! TabLineSel guibg=#141414 guifg=#ffb700 ctermbg=233 ctermfg=214 cterm=bold gui=bold
+hi! TabLine guibg=#141414 guifg=#404040 ctermbg=233 ctermfg=238
 
 if g:molokayo#high_contrast#comments == 1
     hi! Comment guibg=bg guifg=#A6A185 ctermbg=bg ctermfg=248
