@@ -17,7 +17,7 @@ if g:molokayo#focus_variant == 1
 else
     hi! link NonText Delimiter
 endif
-hi! EndOfBuffer ctermbg=bg ctermfg=bg guibg=bg guifg=bg
+hi! link EndOfBuffer NonText
 hi! Ignore guibg=bg guifg=#303030 ctermbg=bg ctermbg=233
 hi! Special guibg=bg guifg=#66d0ef ctermbg=bg ctermfg=81 gui=italic cterm=italic
 hi! Conceal guifg=#f92672 guibg=bg cterm=bold ctermfg=198 ctermbg=bg
@@ -61,7 +61,7 @@ hi! VertSplit guibg=#151515 guifg=#151515 ctermbg=233  ctermfg=233
 " Statuline:
 hi! StatusLine guibg=#151515 guifg=#ffffff gui=None cterm=None ctermbg=233 ctermfg=15
 hi! StatusLineNC guibg=#252525 guifg=#808080 gui=None cterm=None ctermbg=235 ctermfg=244
-hi! Wildmenu guibg=#f92672 guifg=#ffffff gui=bold cterm=bold ctermbg=199 ctermfg=15 
+hi! Wildmenu guibg=#f92672 guifg=#ffffff gui=bold cterm=bold ctermbg=199 ctermfg=15
 hi! SLSpecial guibg=#151515 guifg=#66d0ef ctermbg=233 ctermfg=81
 hi! SLDelim guibg=#151515 guifg=#808080 ctermbg=233 ctermfg=244
 hi! SLNumber guibg=#151515 guifg=#ae81ff ctermbg=233 ctermfg=141
@@ -73,6 +73,9 @@ hi! SLType guibg=#151515 guifg=#66d9ae gui=bold cterm=bold ctermbg=233 ctermfg=8
 hi! SLFunction guibg=#151515 guifg=#a6e2e2 ctermbg=233 ctermfg=153
 hi! SLSpellBad guibg=#151515 gui=undercurl guisp=#ff0000 cterm=underline ctermbg=233
 hi! SLVCS guibg=#151515 guifg=#ff5000 gui=italic cterm=italic ctermbg=233 ctermfg=202
+" Completion:
+hi! link PMenu SLDelim
+hi! link PMenuSel WildMenu
 
 " vim-buftabline support
 hi! link BufTabLineFill StatusLine
